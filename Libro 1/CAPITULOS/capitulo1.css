@@ -1,0 +1,139 @@
+/* styles.css */
+
+/* Reset some default styles */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styles for the body */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2d3748;
+    color: #f7fafc;
+  }
+  
+  /* Styles for the header */
+  header {
+    background-color: rgba(45, 55, 72, 0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f7fafc;
+  }
+  
+  @media (min-width: 640px) {
+    header h1 {
+      font-size: 32px;
+    }
+  }
+  
+  /* Styles for the main content */
+  main {
+    flex: 1;
+    padding: 48px 16px;
+  }
+  
+  main .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  main h2 {
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f7fafc;
+  }
+  
+  @media (min-width: 640px) {
+    main h2 {
+      font-size: 32px;
+    }
+  }
+  
+  .bg-gray-700 {
+    background-color: #374151;
+  }
+  
+  .p-6 {
+    padding: 24px;
+  }
+  
+  .rounded-lg {
+    border-radius: 8px;
+  }
+  
+  .shadow-sm {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mb-4 {
+    margin-bottom: 16px;
+  }
+  
+  .text-gray-400 {
+    color: #a0aec0;
+  }
+  
+  .mb-6 {
+    margin-bottom: 24px;
+  }
+  
+  .h-64 {
+    height: 16rem;
+  }
+  
+  .sm-h-96 {
+    height: 24rem;
+  }
+  
+  @media (min-width: 640px) {
+    .sm-h-96 {
+      height: 24rem;
+    }
+  }
+  
+  /* Styles for the button */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #4299e1;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #f7fafc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #2b6cb0;
+  }
+  
+  /* Styles for the footer */
+  footer {
+    background-color: #2d3748;
+    padding: 24px;
+    text-align: center;
+    color: #a0aec0;
+  }
+  

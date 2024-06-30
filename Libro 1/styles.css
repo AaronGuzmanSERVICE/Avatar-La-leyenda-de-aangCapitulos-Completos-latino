@@ -1,0 +1,133 @@
+/* styles.css */
+
+/* Reset some default styles */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styles for the body */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2d3748;
+    color: #f7fafc;
+  }
+  
+  /* Styles for the header */
+  header {
+    background-color: rgba(45, 55, 72, 0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f7fafc;
+  }
+  
+  @media (min-width: 640px) {
+    header h1 {
+      font-size: 32px;
+    }
+  }
+  
+  /* Styles for the main content */
+  main {
+    flex: 1;
+    padding: 48px 16px;
+  }
+  
+  main .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  main h2 {
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f7fafc;
+  }
+  
+  @media (min-width: 640px) {
+    main h2 {
+      font-size: 32px;
+    }
+  }
+  
+  main .grid {
+    display: grid;
+    gap: 32px;
+  }
+  
+  @media (min-width: 640px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .grid div {
+    background-color: #374151;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grid h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #f7fafc;
+  }
+  
+  .grid p {
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #a0aec0;
+  }
+  
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #4299e1;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #f7fafc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #2b6cb0;
+  }
+  
+  /* Styles for the footer */
+  footer {
+    background-color: #2d3748;
+    padding: 24px;
+    text-align: center;
+    color: #a0aec0;
+  }
+  
